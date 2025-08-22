@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Facebook</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-left">
+            <h1>facebook</h1>
+        </div>
+        <div class="navbar-right">
+            <form>
+                <input type="text" placeholder="Email or Phone">
+                <input type="password" placeholder="Password">
+                <button type="submit">Log In</button>
+                <a href="#">Forgotten password?</a>
+            </form>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="left-section">
+            <h2>Facebook helps you connect and share with the people in your life.</h2>
+            <img src="fb.png" alt="network graphic">
+        </div>
+
+        <div class="right-section">
+            <h2>Create an account</h2>
+            <p>It's free and always will be.</p>
+            <form class="signup-form">
+                <!-- First & Last Name sejajar -->
+                <div class="name-fields">
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Last Name">
+                </div><br>
+
+                <input type="text" placeholder="Mobile number or email address"><br>
+                <input type="password" placeholder="New Password"><br>
+                <input type="password" placeholder="Retype New Password"><br>
+                <br>
+                
+                <!-- Birthday -->
+                <label>Birthday</label><br>
+                <select>
+                    <option>1</option><option>2</option><option>3</option>
+                </select>
+                <select>
+                    <option>Jan</option><option>Feb</option><option>Mar</option>
+                </select>
+                <select>
+                    <option>2000</option><option>2001</option><option>2002</option>
+                </select><br><br>
+
+                <!-- Gender -->
+                <div class="gender-options">
+                    <label><input type="radio" name="gender"> Male</label>
+                    <label><input type="radio" name="gender"> Female</label>
+                </div><br>
+
+                <p>By clicking Create an account, you agree to our Terms and that you have read our Data Policy.</p>
+
+                <button type="submit" class="signup-btn">Create an account</button><br><br>
+                <a href="#">Create a Page</a> for a celebrity, band or business.
+            </form>
+        </div>
+    </div>
+
+<!-- style -->
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e9ebee;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #3b5998;
+    color: white;
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.navbar form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar input {
+    padding: 5px;
+    font-size: 14px;
+}
+
+.navbar button {
+    background-color: #4267b2;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.navbar a {
+    color: #dfe3ee;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+}
+
+.left-section {
+    width: 45%;
+}
+
+.left-section h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.left-section img {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 20px;
+}
+
+.right-section {
+    width: 40%;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.right-section h2 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.signup-form input,
+.signup-form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+.signup-btn {
+    background-color: #42b72a;
+    color: white;
+    font-size: 16px;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* Baru: First & Last Name sejajar */
+.name-fields {
+    display: flex;
+    gap: 10px;
+}
+
+.name-fields input {
+    flex: 1;
+}
+
+/* Baru: Radio button sejajar kiri */
+.gender-options {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.gender-options label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+</style>
+</body>
+</html>
+
